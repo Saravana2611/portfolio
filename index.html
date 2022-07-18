@@ -41,7 +41,7 @@
     </div>
     <section class="proj">
         <hr>
-        <h2>Projects</h2>
+        <h2 class="sectionHeading">Projects</h2>
         <div class="projects">
             <div class="card">
                 <div class="projectSubClass">
@@ -86,25 +86,27 @@
             </div>
         </div>
     </section>
+
     <section class="contact">
         <hr>
-        <h2>Contact </h2>
-        <div>
+        <h2 class="sectionHeading">Contact </h2>
+        <div class="formdiv">
             <h1>Let's Talk</h1>
-            <p>Get in touch via the form below, or by emailing <a href="mailto:p.saravanan2611@gmail.com">here</a></p>
+            <p>Get in touch via the form below, or by emailing <a href="mailto:p.saravanan2611@gmail.com" >here</a></p>
             <form action="#">
                 <label for="formName">Name:</label>
-                <input type="text" class="formName" maxlength="256" name="name" placeholder="Enter your name" id="name"
+                <input type="text" class="formName text" maxlength="256" name="name" placeholder="Enter your name" id="name"
                     required="">
                 <label for="formEmail">Email Address:</label>
-                <input type="email" class="formEmail" maxlength="256" name="email"
+                <input type="email" class="formEmail text" maxlength="256" name="email"
                     placeholder="Enter your Email Address" id="Email" required="True">
                 <label for="message">Message:</label>
-                <input type="textarea" name="message" id="message">
-                <input type="submit" value="Submit" class="submitbutton">
+                <textarea name="message" id="message" cols="53" rows="5"></textarea>
+                <input type="submit" value="Submit"  id="submit">
             </form>
         </div>
     </section>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
