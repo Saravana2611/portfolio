@@ -70,7 +70,7 @@ body {
 
 
 body {
-    background: linear-gradient(45deg, #FF2CAA 0%, #ffff01 100%);
+    background: linear-gradient(45deg, rgb(118, 15, 15) 20%, black 100%);
 }
 
 .potfoliobutton:hover {
@@ -106,7 +106,7 @@ body {
 
 .proj {
     width: 100%;
-    height: 125%;
+    height: 250vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -124,7 +124,7 @@ body {
     text-align: center;
     letter-spacing: 1.5rem;
     text-transform: uppercase;
-
+    color: white;
 }
 
 section hr {
@@ -146,7 +146,7 @@ section hr {
     align-items: flex-start;
     font-size: 3.2rem;
     /* margin: 20px; */
-    /* padding: 0; */
+    padding: 0;
 }
 
 
@@ -162,11 +162,13 @@ section hr {
 }
 
 .projects img {
+    align-self: center;
     width: 100%;
     height: 100%;
     max-width: 400px;
     max-height: 400px;
     margin: 0;
+    padding: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -182,17 +184,36 @@ section hr {
     align-self: center;
     background-color: CAF0F8;
     display: flex;
-    flex-direction: row;
-    /* justify-content: flex-end; */
+    flex-direction: column;
     border-radius: 15px;
-    padding: 0;
-    padding-left: 40px;
+    padding: 5px;
+    margin: 0;
 }
 
-.contact{
+.card:hover{
+    max-width: 1050px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.contact {
     width: 100%;
     height: 20%;
 }
+
+@media (min-width:1000px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        padding-left: 40px;
+    }
+
+    .proj {
+        height: 125vh;
+    }
+
+}
+
 @keyframes text_reveal_box {
     50% {
         width: 100%;
